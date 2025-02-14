@@ -62,6 +62,14 @@ return {
                     "and have {C:attention}+1{} {C:pink}Energy{}"
                 }
             },
+            b_poke_legendarydeck = {
+                name = "Legendary Deck",
+                text = {
+                    "Start run with a",
+                    "{C:spectral,T:c_poke_masterball}#2#{} card",
+                    "-1 hand each round"
+                } 
+            },
         },
         Blind = {
             bl_poke_cgoose = {
@@ -3546,6 +3554,7 @@ return {
             cubone_marowak_infoqueue = "Cubone and Marowak",
             snorlax_infoqueue = "Snorlax",
             pokeball_variable = "Pokéball",
+            masterball_variable = "Masterball",
             goodrod_variable = "Good Rod",
             pinkseal_variable = "Pink Seal",
             twisted_spoon_variable = "Twisted Spoon",
