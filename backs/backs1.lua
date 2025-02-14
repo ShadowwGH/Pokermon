@@ -73,9 +73,23 @@ local telekineticdeck = {
   end,
 	pos = { x = 3, y = 0 },
 	atlas = "pokedeck",
-} 
+}
 
-local dList = {luminousdeck, obituarydeck, telekineticdeck}
+local legendarydeck = {
+	name = "legendarydeck",
+	key = "legendarydeck",  
+	order = 21,
+  unlocked = true,
+  discovered = true,
+	config = {hands = -1, consumables = {'c_poke_masterball'}},
+  loc_vars = function(self, info_queue, center)
+    return {vars = {localize("masterball_variable")}}
+  end,
+	pos = { x = 4, y = 0 },
+	atlas = "pokedeck",
+}
+
+local dList = {luminousdeck, obituarydeck, telekineticdeck, legendarydeck}
 
 if pokermon_config.pokeballs then
   table.insert(dList, 1, pokemondeck)
